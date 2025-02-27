@@ -1,0 +1,273 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    background-image: url(image/vikku\ bg\ 2.avif);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #111;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    border-radius: 20px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    transform: scale(1.1);
+}
+
+.navbar a.active {
+    background-color: #5e7b92;
+    color: black;
+}
+
+.container {
+    padding: 100px 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.head {
+    margin-top: 80px;
+    animation: bounceIn 1.5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hero {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.subtext {
+    font: size 30px;
+    color: white;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    animation: slideLeft 1.5s ease-in-out;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.about-section h2 {
+    color: orange;
+    font-size: 36px;
+}
+
+.about-section p {
+    font-size: 22px;
+}
+
+.education-section h2,
+.hobbies-section h2 {
+    color: orange;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.education-cards,
+.hobbies-card {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+.education-card,
+.hobbies-card {
+    width: 350px;
+    height: 350px;
+    border: 3px solid white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #222;
+    flex-wrap: wrap;
+    font-size: 10pxpx;
+}
+
+.education-card:hover,
+.hobbies-card:hover {
+    box-shadow: 0 0 30px white;
+}
+
+.skills-section {
+    margin-top: 50px;
+}
+
+.skills-section h2 {
+    color: orange;
+    font-size: 40px;
+}
+
+.skills-container,
+.hobbies-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill-card {
+    width: 200px;
+    height: 100px;
+    border: 2px solid white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #222;
+    font-size: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    box-shadow: 0 0 29px white;
+}
+
+.projects-section h2 {
+    color: orange;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 250px;
+    height: 350px;
+    border: 3px solid white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #222;
+    font-size: 24px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 30px white;
+}
+
+#contact {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#contact:hover {
+    box-shadow: 0 10px 30px rgba(222, 214, 219, 0.953);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    color: red;
+}
+
+b {
+    color: red;
+}
